@@ -1,7 +1,6 @@
 package src;
 
 import src.components.IOViewer;
-import src.components.TextField;
 import src.components.controls.ControlMenu;
 import src.state.OutputData;
 
@@ -16,7 +15,8 @@ public class App {
             var frame = new AppFrame(); // main app frame
             frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE); // exit when closing window
             frame.setVisible(true);
-            frame.setResizable(true);
+            frame.setResizable(false);
+            frame.getContentPane().setBackground(Color.BLACK);
         });
     }
 }
@@ -40,11 +40,11 @@ class AppFrame extends JFrame {
         setLayout(new FlowLayout());
 
         //panels
-        IOViewer ioViewer = new IOViewer(frameWidth, frameHeight * 20 / 100);
+        IOViewer ioViewer = new IOViewer(frameWidth, frameHeight * 25 / 100);
         OutputData.addSubscriber(ioViewer);
         add(ioViewer); // adds the calculator input/output screen
 
-        ControlMenu controlMenu = new ControlMenu(frameWidth, frameHeight * 80 / 100);
+        ControlMenu controlMenu = new ControlMenu(frameWidth, frameHeight * 75 / 100);
         add(controlMenu);
     }
 }

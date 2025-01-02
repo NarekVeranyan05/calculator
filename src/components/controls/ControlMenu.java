@@ -5,7 +5,7 @@ import javax.swing.border.EmptyBorder;
 import java.awt.*;
 
 public class ControlMenu extends JPanel {
-    private final int MARGIN_BOTTOM = 20, MARGIN_HORIZONTAL = 10;
+    private final int MARGIN_TOP_BOTTOM = 20, MARGIN_HORIZONTAL = 10;
     private int width = 10;
     private int height = 10;
     private GridBagConstraints gbc = new GridBagConstraints();
@@ -15,17 +15,16 @@ public class ControlMenu extends JPanel {
 
         if (width >= 0 && height >= 0) {
             this.width = width - 2 * MARGIN_HORIZONTAL;
-            this.height = height - MARGIN_BOTTOM;
+            this.height = height - 2 * MARGIN_TOP_BOTTOM;
         }
 
         setSize(this.width, this.height);
         setLayout(new GridBagLayout());
-        gbc.weightx = this.width - 2 * MARGIN_HORIZONTAL;
-        gbc.weighty = this.height - 21 * MARGIN_BOTTOM;
+        gbc.weightx = this.width;
+        gbc.weighty = this.height;
 
         // decorations
-        setBorder(BorderFactory.createEmptyBorder(0, 0, MARGIN_BOTTOM, 0));
-        setBackground(Color.WHITE);
+        setOpaque(false);
 
         // buttons: row 1
         var button1 = new ControlButton("AC");
@@ -151,7 +150,17 @@ public class ControlMenu extends JPanel {
 
     @Override
     protected void paintComponent(Graphics g) {
-        super.paintComponent(g);
+        RenderingHints hints = new RenderingHints(
+                RenderingHints.KEY_ANTIALIASING, RenderingHints.VALUE_ANTIALIAS_ON
+        );
+        Graphics2D g2d = (Graphics2D) g.create();
+        g2d.addRenderingHints(hints);
+        super.paintComponent(g2d);
+
+        g2d.setColor(Color.WHITE);
+        g2d.fillRoundRect(0, 0, this.width, this.height, 10, 10);
+
+        g2d.dispose();
     }
 
     @Override

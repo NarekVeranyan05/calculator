@@ -33,14 +33,7 @@ public class ControlButton extends JButton {
                     case "+/-":
                         // last char entered must be either a digit or .
                         if(Character.isDigit(lastChar) || lastChar == '.'){
-                            int lastPlusIndex = OutputData.getCommandInput().lastIndexOf("+");
-                            int lastMinusIndex = OutputData.getCommandInput().lastIndexOf("-");
-                            int lastMultipIndex = OutputData.getCommandInput().lastIndexOf("x");
-                            int lastDivisionIndex = OutputData.getCommandInput().lastIndexOf("÷");
-                            int lastModIndex = OutputData.getCommandInput().lastIndexOf("%");
-                            int lastDotIndex = OutputData.getCommandInput().lastIndexOf(".");
-
-                            int[] indicesArr = {lastPlusIndex, lastMinusIndex, lastMultipIndex, lastDivisionIndex, lastModIndex, lastDotIndex};
+                            int[] indicesArr = getOperatorLastIndices();
                             int whereToAddMinus = ArrayUtils.findMax(indicesArr, 0, indicesArr.length-1);
 
                             OutputData.setCommandInput(OutputData.getCommandInput().substring(0, whereToAddMinus+1) + "(-" + OutputData.getCommandInput().substring(whereToAddMinus+1) + ")");
@@ -68,7 +61,7 @@ public class ControlButton extends JButton {
                             int lastDotIndex = OutputData.getCommandInput().lastIndexOf(".");
                             int[] indicesArr = {lastPlusIndex, lastMinusIndex, lastMultipIndex, lastDivisionIndex, lastModIndex, lastDotIndex};
 
-                            if(ArrayUtils.findMax(indicesArr, 0, indicesArr.length-1) != lastDotIndex){
+                            if(ArrayUtils.findMax(indicesArr, 0, indicesArr.length-1) != lastDotIndex || lastDotIndex == -1){
                                 OutputData.setCommandInput(OutputData.getCommandInput() + type);
                             }
                         }
@@ -90,6 +83,18 @@ public class ControlButton extends JButton {
                 }
             }
         });
+    }
+
+    private static int[] getOperatorLastIndices() {
+        int lastPlusIndex = OutputData.getCommandInput().lastIndexOf("+");
+        int lastMinusIndex = OutputData.getCommandInput().lastIndexOf("-");
+        int lastMultipIndex = OutputData.getCommandInput().lastIndexOf("x");
+        int lastDivisionIndex = OutputData.getCommandInput().lastIndexOf("÷");
+        int lastModIndex = OutputData.getCommandInput().lastIndexOf("%");
+        int lastDotIndex = OutputData.getCommandInput().lastIndexOf(".") - 2; // index prior to number before . (ex: 2.8)
+
+        int[] indicesArr = {lastPlusIndex, lastMinusIndex, lastMultipIndex, lastDivisionIndex, lastModIndex, lastDotIndex};
+        return indicesArr;
     }
 
     @Override

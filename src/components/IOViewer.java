@@ -7,15 +7,15 @@ import src.state.OutputData;
 
 // calculator input/output screen class
 public class IOViewer extends JPanel {
-    private final int MARGIN_TOP = 10, MARGIN_HORIZONTAL = 10;
+    private final int MARGIN_TOP_BOTTOM = 5, MARGIN_HORIZONTAL = 10;
 
     // dimensions of the panel
     private int width = 10;
     private int height = 10;
 
     // components
-    private JTextField outputField;
-    private JTextField inputField;
+    private TextField outputField;
+    private TextField inputField;
 
 
     public IOViewer(int width, int height) {
@@ -25,31 +25,36 @@ public class IOViewer extends JPanel {
         }
 
         setSize(this.width, this.height);
-        setBorder(BorderFactory.createEmptyBorder(0, 0, MARGIN_TOP, 0));
+        setBorder(BorderFactory.createEmptyBorder(MARGIN_TOP_BOTTOM, 0, MARGIN_TOP_BOTTOM, 0));
 
         // styling panel
-        setBackground(new Color(2, 2, 2));
         setLayout(new GridLayout(2, 1));
+        setOpaque(false);
 
         // adds output line component
-        outputField = new JTextField();
-        outputField.setText(OutputData.getCalculatedOutput());
-        outputField.setSize(this.width, this.height / 2);
-        outputField.setHorizontalAlignment(SwingConstants.RIGHT);
-        outputField.setFont(new Font(Font.SANS_SERIF, Font.PLAIN, 16));
-        outputField.setEnabled(false);
+        outputField = new TextField(this.width, this.height / 2, OutputData.getCalculatedOutput());
         OutputData.addSubscriber(outputField);
         add(outputField);
 
         // adds input line component
-        inputField = new JTextField();
-        inputField.setText(OutputData.getCommandInput());
-        inputField.setSize(this.width, this.height / 2);
-        inputField.setHorizontalAlignment(SwingConstants.RIGHT);
-        inputField.setFont(new Font(Font.SANS_SERIF, Font.PLAIN, 20));
-        inputField.setEnabled(false);
+        inputField = new TextField(this.width, this.height / 2, OutputData.getCommandInput());
         OutputData.addSubscriber(inputField);
         add(inputField);
+    }
+
+    @Override
+    protected void paintComponent(Graphics g) {
+        RenderingHints hints = new RenderingHints(
+                RenderingHints.KEY_ANTIALIASING, RenderingHints.VALUE_ANTIALIAS_ON
+        );
+        Graphics2D g2d = (Graphics2D) g.create();
+        g2d.addRenderingHints(hints);
+        super.paintComponent(g2d);
+
+        g2d.setColor(new Color(255, 135, 0));
+        g2d.fillRoundRect(0, 0, this.width, this.height, 10, 10);
+
+        g2d.dispose();
     }
 
     @Override
