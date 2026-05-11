@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="575159ed-1771-4d96-a847-06664f8304bf" name="Changes" comment="- slight update over UI">
+      <change beforePath="$PROJECT_DIR$/out/production/calculator/src/utilities/ExpEvaluator.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/calculator/src/utilities/ExpEvaluator.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/utilities/ExpEvaluator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/utilities/ExpEvaluator.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;RobCoCoder&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/RobCoCoder/calculator.git&quot;,
+    &quot;accountId&quot;: &quot;a5175f56-d378-4acc-8415-c1d0f737a85e&quot;
+  }
+}</component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="jar:///Library/Java/JavaVirtualMachines/jdk-23.jdk/Contents/Home/lib/src.zip!/java.base/java/lang/Character.java" root0="SKIP_INSPECTION" />
+    <setting file="jar:///Library/Java/JavaVirtualMachines/jdk-23.jdk/Contents/Home/lib/src.zip!/java.base/java/lang/CharacterDataLatin1.java" root0="SKIP_INSPECTION" />
+    <setting file="jar:///Library/Java/JavaVirtualMachines/jdk-23.jdk/Contents/Home/lib/src.zip!/java.base/java/lang/Object.java" root0="SKIP_INSPECTION" />
+    <setting file="jar:///Library/Java/JavaVirtualMachines/jdk-23.jdk/Contents/Home/lib/src.zip!/java.base/java/util/AbstractCollection.java" root0="SKIP_INSPECTION" />
+    <setting file="jar:///Library/Java/JavaVirtualMachines/jdk-23.jdk/Contents/Home/lib/src.zip!/java.base/java/util/AbstractList.java" root0="SKIP_INSPECTION" />
+    <setting file="jar:///Library/Java/JavaVirtualMachines/jdk-23.jdk/Contents/Home/lib/src.zip!/java.base/java/util/ArrayList.java" root0="SKIP_INSPECTION" />
+    <setting file="jar:///Library/Java/JavaVirtualMachines/jdk-23.jdk/Contents/Home/lib/src.zip!/java.base/java/util/Arrays.java" root0="SKIP_INSPECTION" />
+    <setting file="jar:///Library/Java/JavaVirtualMachines/jdk-23.jdk/Contents/Home/lib/src.zip!/java.base/jdk/internal/math/FloatingDecimal.java" root0="SKIP_INSPECTION" />
+    <setting file="jar:///Library/Java/JavaVirtualMachines/jdk-23.jdk/Contents/Home/lib/src.zip!/java.base/jdk/internal/util/Preconditions.java" root0="SKIP_INSPECTION" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 1
+}</component>
+  <component name="ProjectId" id="2q2g8oolQRg8KsO03G8d2P80mDo" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.App.executor&quot;: &quot;Run&quot;,
+    &quot;Application.ArrayUtilsTest.executor&quot;: &quot;Run&quot;,
+    &quot;Application.ExpEvaluatorTest.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Unnamed.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/narekveranian/Documents/04 Coding/IntelliJ/Git/calculator&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;
+  }
+}</component>
+  <component name="RunManager" selected="Application.App">
+    <configuration name="App" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="src.App" />
+      <module name="calculator" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ArrayUtilsTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="src.utilities.ArrayUtilsTest" />
+      <module name="calculator" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="src.utilities.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ExpEvaluatorTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="src.utilities.ExpEvaluatorTest" />
+      <module name="calculator" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="src.utilities.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Application.App" />
+      <item itemvalue="Application.ArrayUtilsTest" />
+      <item itemvalue="Application.ExpEvaluatorTest" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.ExpEvaluatorTest" />
+        <item itemvalue="Application.ArrayUtilsTest" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="575159ed-1771-4d96-a847-06664f8304bf" name="Changes" comment="" />
+      <created>1733865927997</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1733865927997</updated>
+    </task>
+    <task id="LOCAL-00001" summary="App initialization">
+      <option name="closed" value="true" />
+      <created>1733866238892</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1733866238892</updated>
+    </task>
+    <task id="LOCAL-00002" summary="App initialization">
+      <option name="closed" value="true" />
+      <created>1733866318887</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1733866318887</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Main frame setup">
+      <option name="closed" value="true" />
+      <created>1733867006846</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1733867006846</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Main frame setup">
+      <option name="closed" value="true" />
+      <created>1733867098750</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1733867098750</updated>
+    </task>
+    <task id="LOCAL-00005" summary="- added input/output viewer&#10;- added control container for calculator buttons">
+      <option name="closed" value="true" />
+      <created>1733970815509</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1733970815509</updated>
+    </task>
+    <task id="LOCAL-00006" summary="- added state change in response to user interaction&#10;- added UI repaint based on state change">
+      <option name="closed" value="true" />
+      <created>1734976935952</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1734976935952</updated>
+    </task>
+    <task id="LOCAL-00007" summary="- added expression evaluator to calculate the expression input by user">
+      <option name="closed" value="true" />
+      <created>1735349186734</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1735349186734</updated>
+    </task>
+    <task id="LOCAL-00008" summary="- modified expression evaluator to be able to calucalate complex expressions with multiple nested braces">
+      <option name="closed" value="true" />
+      <created>1735576351898</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1735576351898</updated>
+    </task>
+    <task id="LOCAL-00009" summary="- modified expression evaluator to be able to calucalate complex expressions with multiple nested braces">
+      <option name="closed" value="true" />
+      <created>1735576503403</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1735576503403</updated>
+    </task>
+    <task id="LOCAL-00010" summary="- slight update over UI">
+      <option name="closed" value="true" />
+      <created>1735782506036</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1735782506036</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="App initialization" />
+    <MESSAGE value="Main frame setup" />
+    <MESSAGE value="- added input/output viewer&#10;- added control container for calculator buttons" />
+    <MESSAGE value="- added state change in response to user interaction&#10;- added UI repaint based on state change" />
+    <MESSAGE value="- added expression evaluator to calculate the expression input by user" />
+    <MESSAGE value="- modified expression evaluator to be able to calucalate complex expressions with multiple nested braces" />
+    <MESSAGE value="- slight update over UI" />
+    <option name="LAST_COMMIT_MESSAGE" value="- slight update over UI" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/utilities/ExpEvaluator.java</url>
+          <line>18</line>
+          <option name="timeStamp" value="18" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/utilities/ExpEvaluator.java</url>
+          <line>53</line>
+          <option name="timeStamp" value="19" />
+        </line-breakpoint>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.lang.IndexOutOfBoundsException" package="java.lang" />
+          <option name="timeStamp" value="12" />
+        </breakpoint>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.lang.NumberFormatException" package="java.lang" />
+          <option name="timeStamp" value="21" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/calculator$ExpEvaluatorTest.ic" NAME="ExpEvaluatorTest Coverage Results" MODIFIED="1735072663201" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true">
+      <FILTER>src.utilities.*</FILTER>
+    </SUITE>
+  </component>
+</project>
